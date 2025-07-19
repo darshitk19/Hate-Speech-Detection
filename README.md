@@ -1,23 +1,30 @@
-# 🧠 Hate Speech Detection App
+# 🛡️ Hate Speech Detection Web App
 
-This project is a Streamlit-based web app that classifies input text as **Hate Speech** or **Not Hate Speech** using a machine learning model trained with **Scikit-learn**. It also highlights influential hate and non-hate words.
+> 📌 The app uses a Scikit-learn pipeline with `TfidfVectorizer` and `SGDClassifier` to perform hate speech detection on textual data. The model is trained using balanced data via upsampling to handle class imbalance. The entire machine learning pipeline—from preprocessing to prediction—is modular and easy to maintain. It supports seamless integration of different vectorizers (e.g., `CountVectorizer`) or classifiers (e.g., `LogisticRegression`, `RandomForestClassifier`) for experimentation. A lightweight and interactive `Streamlit` interface enables users to test the model in real time, making the solution practical and user-friendly for exploratory use.
+
+
+
+## 🛠️ Built With
+
+- **Pandas** – Data manipulation and analysis
+- **Scikit-learn** – Machine Learning (SGDClassifier, train/test split, TF-IDF, pipeline)
+- **Streamlit** – Frontend web app for interactive UI
+- **Joblib** – Model persistence
+- **Numpy** – Numerical operations
+
+
+## ✅ Features
+
+- Real-time text input prediction
+- Trained ML pipeline (SGD + TF-IDF)
+- Simple, intuitive Streamlit UI
+- Exported & reloaded model using `joblib`
 
 ---
-
-## ✅ Create a Virtual Environment (Optional)
-
-```bash
-python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-
-# On Mac/Linux:
-source venv/bin/activate
 ✅ Install Dependencies
+```
 pip install streamlit scikit-learn joblib numpy
+```
 🚀 Running the App
-bash
-Copy
-Edit
+```
 streamlit run app.py
