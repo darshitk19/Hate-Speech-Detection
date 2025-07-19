@@ -1,33 +1,36 @@
-# 🛡️ Hate Speech Detection Web App
+# 🛡️ Hate Speech Detection & Politeness Enhancer Web App
 
-> 📌 A lightweight Streamlit-based web application that detects hate speech in real time using a trained machine learning pipeline. The system leverages Scikit-learn’s `SGDClassifier` and `TfidfVectorizer` with class-balancing techniques to ensure robust predictions on textual data.
+A Streamlit-powered web application that detects hate speech and enhances politeness in user-provided text. Built using a trained Scikit-learn pipeline with `SGDClassifier` and `TfidfVectorizer`.
+
+---
+
+## 🧠 Key Features
+
+### ✅ Hate Speech Detection
+Predicts whether each sentence contains hate speech using a trained ML pipeline.
+
+### 💬 Politeness Enhancer
+Offensive keywords are detected and replaced with respectful alternatives using a customizable replacement dictionary.
+
+### 🧾 Multi-Sentence Support
+Input multiple sentences separated by periods or newlines. Each sentence is analyzed independently.
+
+### 📊 Word Contribution Insight
+Identifies which words contributed most to classifying a sentence as hate or not.
+
+### 🛠️ Real-time Predictions
+Fully interactive Streamlit UI for testing and viewing results instantly.
 
 ---
 
 ## 🛠️ Built With
 
-- **Pandas** – Data manipulation and analysis  
-- **Scikit-learn** – Machine Learning (SGDClassifier, TF-IDF, pipeline)  
-- **Streamlit** – Frontend web app for interactive UI  
-- **Joblib** – Model persistence  
-- **Numpy** – Numerical operations  
-- **re (Regular Expressions)** – Pattern matching for text preprocessing and polite word replacement  
+- **Streamlit** – For interactive web UI  
+- **Scikit-learn** – Machine learning model (`SGDClassifier`, `TfidfVectorizer`)  
+- **Joblib** – Model serialization  
+- **NumPy** – Numerical operations  
+- **Regex** – Text parsing and sanitization  
 
----
-
-## ✅ Features
-
-- Real-time hate speech detection via web interface  
-- Balanced training through upsampling to handle class imbalance  
-- Clean, modular ML pipeline using `Pipeline` API  
-- Downloadable model and vectorizer with `joblib`  
-- Lightweight and easy to run via `Streamlit`  
-
----
-
-## 💬 Politeness Enhancer
-
-Offensive keywords are detected and replaced with softer or more respectful alternatives using a customizable dictionary and regular expressions.
 
 
 ---
